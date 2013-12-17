@@ -4196,6 +4196,11 @@ public class JetDiagnosticsTestGenerated extends AbstractDiagnosticsTestWithEage
                 doTest("compiler/testData/diagnostics/tests/inner/extensionFun.kt");
             }
             
+            @TestMetadata("extensionLambdaInsideNestedClass.kt")
+            public void testExtensionLambdaInsideNestedClass() throws Exception {
+                doTest("compiler/testData/diagnostics/tests/inner/extensionLambdaInsideNestedClass.kt");
+            }
+            
             @TestMetadata("illegalModifier.kt")
             public void testIllegalModifier() throws Exception {
                 doTest("compiler/testData/diagnostics/tests/inner/illegalModifier.kt");
