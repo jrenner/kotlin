@@ -55,6 +55,11 @@ public class AntTaskTest extends KotlinIntegrationTestBase {
         runJava("hello.run", "-cp", jar + File.pathSeparator + runtime, "hello.HelloPackage");
     }
 
+    @Test
+    public void jvmClasspath() throws Exception {
+        doJvmAntTest();
+    }
+
     private void doJsAntTest() throws Exception {
         doAntTest(SUCCESSFUL);
 
